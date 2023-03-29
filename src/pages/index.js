@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Section, Text, Strong, Span, Em, Box, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Section, Text, Em, Span, Box, Strong, Input, Button } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, Formspree, SocialMedia } from "@quarkly/components";
@@ -26,7 +26,7 @@ export default (() => {
 				display="grid"
 				grid-template-columns="repeat(3, 1fr)"
 				md-grid-template-columns="repeat(2, 1fr)"
-				margin="0px 32px 0px 32px"
+				margin="0px 100px 0px 100px"
 				width="100%"
 			/>
 			<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Group%20109.png?v=2023-03-29T05:43:33.518Z" width="120px" z-index="3" />
@@ -129,7 +129,7 @@ export default (() => {
 				lg-margin="0px 0px 60px 0px"
 				sm-margin="0px 0px 40px 0px"
 				sm-padding="0px 0px 0px 0px"
-				margin="0px 50px 0px -100px"
+				margin="0px 50px 0px -50px"
 				padding="0px 0 0px 0px"
 			>
 				<Text
@@ -140,10 +140,10 @@ export default (() => {
 					sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 					md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
 				>
-					The all-in-one event marketing platform for orgs
+					The all-in-one event marketing platform{" "}
 				</Text>
-				<Text margin="0px 0px 40px 0px" color="--darkL2" font="--headline3" lg-text-align="center">
-					<Em
+				<Text margin="0px 0px 0px 0px" color="#586D8E" font="normal 400 30px/1.5 --fontFamily-sans" lg-text-align="center">
+					<Span
 						overflow-wrap="normal"
 						word-break="normal"
 						white-space="normal"
@@ -153,7 +153,7 @@ export default (() => {
 						user-select="auto"
 						pointer-events="auto"
 					>
-						<Span
+						<Em
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -163,38 +163,11 @@ export default (() => {
 							user-select="auto"
 							pointer-events="auto"
 						>
-							<Strong
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
-								text-indent="0"
-								text-overflow="clip"
-								hyphens="manual"
-								user-select="auto"
-								pointer-events="auto"
-							>
-								Disko ={" "}
-							</Strong>
-							One-Link + Event Landing Page{" "}
-							<br />
-							+ Discovery + Advanced Analytics{" "}
-							<br />
-						</Span>
-						<Span
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
-							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
-							user-select="auto"
-							pointer-events="auto"
-						>
-							+{" "}
-						</Span>
-						more to come
-					</Em>
+							Marketing aint easy.
+						</Em>
+					</Span>
 				</Text>
+				<Text margin="0px 0px 40px 0px" color="--darkL2" font="--lead" lg-text-align="center" />
 				<Box
 					display="flex"
 					sm-flex-direction="column"
@@ -235,229 +208,375 @@ export default (() => {
 				<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Wavy_Bus-15_Single-10.jpg?v=2023-03-29T06:05:25.150Z" display="block" padding="0px 0px 0px px" margin="0px 0px 0px 0px" />
 			</Box>
 		</Section>
-		<Section md-padding="25px 0px 25px 0px" padding="70px 0 70px 0" quarkly-title="Info" lg-padding="50px 0px 50px 0px">
-			<Override
-				slot="SectionContent"
-				margin="0px 20px 0px 20px"
-				md-margin="0px 16px 0px 16px"
-				font="22px "
-				flex="0 1 auto"
-				align-self="auto"
-				order="-1"
-				display="flex"
-				flex-wrap="wrap"
-			/>
-			<Box
-				md-margin="44px 0px 0px 0px"
-				lg-grid-template-columns="1fr"
-				display="flex"
-				grid-template-columns="3fr 2fr"
-				grid-gap="64px"
-				margin="96px 0px 0px 0px"
-				xl-grid-gap="32px"
-				md-grid-template-columns="1fr"
-				lg-margin="64px 0px 0px 0px"
-				order="-1"
-			>
-				<Box
-					margin="-200px 0px 0px 0px"
-					padding="px 0px % 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					width="100%"
-					border-radius="30px"
+		<Section background="--color-light">
+			<Text margin="0px 0px 0px 0px" color="--darkL2" font="--headline3" lg-text-align="center">
+				<Em
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+					user-select="auto"
+					pointer-events="auto"
 				>
-					<Image
-						src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/[Mockup]%20iPhone%2013.png?v=2023-03-29T06:15:20.399Z"
-						display="flex"
-						align-items="flex-start"
-						margin="0px 0px 0px -200px"
-						padding="0px 0px 0px 0px"
-					/>
-				</Box>
-				<Box display="flex" flex-direction="column" align-items="flex-start" order="1">
-					<Text
-						lg-text-align="center"
-						quarkly-title="Title"
-						text-transform="uppercase"
-						opacity="0.6"
-						lg-margin="0px 0px 6px 0px"
-						font="--base"
-						margin="0px 0px 10px 0px"
-						letter-spacing="1px"
-						color="--dark"
+					<Span
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
 					>
-						Contacts
-					</Text>
-					<Text
-						font="normal 500 45px/1.2 --fontFamily-sans"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--headline3"
-						md-font="--headline3"
+						<Strong
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
+							text-indent="0"
+							text-overflow="clip"
+							hyphens="manual"
+							user-select="auto"
+							pointer-events="auto"
+						>
+							Disko ={" "}
+						</Strong>
+						One-Link + Event Landing Page + Discovery + Advanced Analytics{" "}
+					</Span>
+					<Span
+						overflow-wrap="normal"
+						word-break="normal"
+						white-space="normal"
+						text-indent="0"
+						text-overflow="clip"
+						hyphens="manual"
+						user-select="auto"
+						pointer-events="auto"
 					>
-						One-Link Sharing
-					</Text>
-					<Text
-						opacity="0.6"
-						sm-text-align="left"
-						lg-text-align="left"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-						font="normal 400 20px/1.5 --fontFamily-sans"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
+						+{" "}
+					</Span>
+					more to come
+				</Em>
+			</Text>
+		</Section>
+		<Section
+			padding="0px 0 0px 0"
+			background="#ffffff url() 0% 0% /auto repeat scroll padding-box"
+			lg-background="#fff"
+			md-padding="96px 0 70px 0"
+			sm-padding="72px 0 70px 0"
+			border-color="#b6b6b6"
+			transition="all --transitionDuration-normal --transitionTimingFunction-easeInOut 1s"
+		>
+			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" order="0" />
+			<Box
+				display="flex"
+				flex-direction="column"
+				align-items="flex-start"
+				order="1"
+				width="50%"
+				justify-content="center"
+			>
+				<Text
+					lg-text-align="center"
+					quarkly-title="Title"
+					text-transform="uppercase"
+					opacity="0.6"
+					lg-margin="0px 0px 6px 0px"
+					font="--base"
+					margin="0px 0px 10px 0px"
+					letter-spacing="1px"
+					color="--dark"
+				>
+					SHaring
+				</Text>
+				<Text
+					font="normal 500 45px/1.2 --fontFamily-sans"
+					margin="0px 0px 28px 0px"
+					color="--dark"
+					lg-text-align="center"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--headline3"
+					md-font="--headline3"
+					text-align="left"
+				>
+					One-Link
+				</Text>
+				<Text
+					opacity="0.6"
+					sm-text-align="left"
+					lg-text-align="left"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--base"
+					font="normal 400 20px/1.5 --fontFamily-sans"
+					margin="0px 0px 20px 0px"
+					color="--darkL2"
+				>
+					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+				</Text>
+				<Box
+					display="flex"
+					sm-flex-direction="column"
+					sm-text-align="center"
+					border-radius="30px"
+					border-color="rgba(255, 255, 255, 0.12)"
+				>
+					<Link
+						href="#"
+						padding="12px 24px 12px 24px"
+						color="--light"
+						background="--color-indigo"
+						text-decoration-line="initial"
+						font="--lead"
+						border-radius="30px"
+						margin="0px 16px 0px 0px"
+						sm-margin="0px 0px 16px 0px"
+						sm-text-align="center"
+						hover-background="--color-orange"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						transition="background-color 0.2s ease-in-out 0s"
+						flex-direction="row"
 					>
-						Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
-					</Text>
+						Create a Link
+					</Link>
 				</Box>
 			</Box>
 			<Box
-				md-margin="44px 0px 0px 0px"
-				lg-grid-template-columns="1fr"
-				display="grid"
-				grid-template-columns="2fr 3fr"
-				xl-grid-gap="32px"
-				md-grid-template-columns="1fr"
-				lg-margin="64px 0px 0px 0px"
-				grid-gap="64px"
-				margin="96px -30px 0px -30px"
-				background="#fbffd6"
-				padding="40px 0px 40px 10px"
-				width="100% border-box"
+				margin="0px 0px 0px 0px"
+				padding="px 0px % 0px"
+				transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+				width="50%"
+				border-radius="30px"
+				order="0"
+				display="flex"
+				xl-overflow-x="hidden"
+				xl-overflow-y="hidden"
+				xl-justify-content="center"
+				md-padding="px 0px 100px 0px"
+				md-margin="0px 0px px 0px"
 			>
-				<Box
-					min-width="100px"
-					min-height="100px"
-					display="flex"
-					flex-direction="column"
+				<Image
+					src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/[Mockup]%20iPhone%2013.png?v=2023-03-29T06:15:20.399Z"
+					display="block"
 					align-items="flex-start"
-				>
-					<Text
-						quarkly-title="Title"
-						text-transform="uppercase"
-						lg-text-align="center"
-						margin="0px 0px 10px 0px"
-						letter-spacing="1px"
-						color="--dark"
-						opacity="0.6"
-						lg-margin="0px 0px 6px 0px"
-						font="--base"
-					>
-						CONTACTS
-					</Text>
-					<Text
-						font="normal 500 45px/1.2 --fontFamily-sans"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-text-align="left"
-						sm-font="--headline3"
-						md-font="--headline3"
-					>
-						Advanced Analytics
-					</Text>
-					<Text
-						font="normal 400 20px/1.5 --fontFamily-sans"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="left"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-					>
-						Study your data to see how you can improve your  events and organization's visibility. Learn from your past events to market your organization more efficiently!
-					</Text>
-				</Box>
-				<Box
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-third.svg?v=2020-11-06T17:15:50.700Z) center center/110% no-repeat"
-					lg-order="-1"
 					margin="0px 0px 0px 0px"
-					padding="0px 0px 60% 0px"
-					height="0px"
-					md-order="-1"
-					width="100%"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+					padding="0px 0px 0px 0px"
+					md-margin="0px 0px px 0px"
+					md-padding="0px 0px 0px 0px"
+				/>
+			</Box>
+		</Section>
+		<Section
+			padding="100px 0 100px 0"
+			background="#fbffd6 url() 0% 0% /auto repeat scroll padding-box"
+			lg-background="#fff"
+			md-padding="96px 0 70px 0"
+			sm-padding="72px 0 70px 0"
+			border-color="#b6b6b6"
+		>
+			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" order="0" />
+			<Box
+				display="flex"
+				flex-direction="column"
+				align-items="flex-start"
+				order="-1"
+				width="50%"
+				justify-content="center"
+			>
+				<Text
+					lg-text-align="center"
+					quarkly-title="Title"
+					text-transform="uppercase"
+					opacity="0.6"
+					lg-margin="0px 0px 6px 0px"
+					font="--base"
+					margin="0px 0px 10px 0px"
+					letter-spacing="1px"
+					color="--dark"
 				>
-					<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Macbook%20Pro%202021%2016_.png?v=2023-03-29T06:27:06.066Z" display="block" width="700px" />
+					Data
+				</Text>
+				<Text
+					font="normal 500 45px/1.2 --fontFamily-sans"
+					margin="0px 0px 28px 0px"
+					color="--dark"
+					lg-text-align="center"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--headline3"
+					md-font="--headline3"
+					xl-text-align="left"
+					sm-text-align="left"
+				>
+					Advanced Analytics
+				</Text>
+				<Text
+					opacity="0.6"
+					sm-text-align="left"
+					lg-text-align="left"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--base"
+					font="normal 400 20px/1.5 --fontFamily-sans"
+					margin="0px 0px 20px 0px"
+					color="--darkL2"
+					xl-text-align="left"
+				>
+					Study your data to see how you can improve your  events and organization's visibility. Learn from your past events to market your organization more efficiently!
+				</Text>
+				<Box
+					display="flex"
+					sm-flex-direction="column"
+					sm-text-align="center"
+					border-radius="30px"
+					border-color="rgba(255, 255, 255, 0.12)"
+				>
+					<Link
+						href="#"
+						padding="12px 24px 12px 24px"
+						color="--light"
+						background="--color-indigo"
+						text-decoration-line="initial"
+						font="--lead"
+						border-radius="30px"
+						margin="0px 16px 0px 0px"
+						sm-margin="0px 0px 16px 0px"
+						sm-text-align="center"
+						hover-background="--color-orange"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						transition="background-color 0.2s ease-in-out 0s"
+						flex-direction="row"
+					>
+						View Your Data
+					</Link>
 				</Box>
 			</Box>
 			<Box
-				md-margin="44px 0px 0px 0px"
-				lg-grid-template-columns="1fr"
-				display="grid"
-				grid-template-columns="3fr 2fr"
-				grid-gap="64px"
-				margin="96px 0px 0px 0px"
-				xl-grid-gap="32px"
-				md-grid-template-columns="1fr"
-				lg-margin="64px 0px 0px 0px"
+				margin="0px 0px 0px 0px"
+				padding="px 0px % 0px"
+				transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
+				width="50%"
+				border-radius="30px"
+				order="0"
+				display="flex"
+				xl-overflow-x="hidden"
+				xl-overflow-y="hidden"
+				xl-justify-content="center"
+				md-padding="px 0px 100px 0px"
+				md-margin="0px 0px px 0px"
 			>
-				<Box
+				<Image
+					src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Macbook%20Pro%202021%2016_.png?v=2023-03-29T06:27:06.066Z"
+					display="block"
+					align-items="flex-start"
 					margin="0px 0px 0px 0px"
-					padding="0px 0px 60% 0px"
-					height="0px"
-					hover-background="--color-lightD2 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-illustration-sea-second.svg?v=2020-11-06T17:14:59.136Z) center center/110% no-repeat"
-					transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					width="100%"
-					border-radius="30px"
+					padding="0px 0px 0px 0px"
+					md-margin="0px 0px px 0px"
+					md-padding="0px 0px 0px 0px"
+				/>
+			</Box>
+		</Section>
+		<Section
+			padding="0px 0 0px 0"
+			background="#ffffff url() 0% 0% /auto repeat scroll padding-box"
+			lg-background="#fff"
+			md-padding="96px 0 70px 0"
+			sm-padding="72px 0 70px 0"
+			border-color="#b6b6b6"
+		>
+			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" order="0" />
+			<Box
+				display="flex"
+				flex-direction="column"
+				align-items="flex-start"
+				order="1"
+				width="50%"
+				justify-content="center"
+			>
+				<Text
+					lg-text-align="center"
+					quarkly-title="Title"
+					text-transform="uppercase"
+					opacity="0.6"
+					lg-margin="0px 0px 6px 0px"
+					font="--base"
+					margin="0px 0px 10px 0px"
+					letter-spacing="1px"
+					color="--dark"
 				>
-					<Image
-						src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/[Mockup]%20iPhone%2013.png?v=2023-03-29T06:15:20.399Z"
-						display="flex"
-						height="50% content-box"
-						width="600px"
-						align-items="flex-start"
-					/>
-				</Box>
+					marketing
+				</Text>
+				<Text
+					font="normal 500 45px/1.2 --fontFamily-sans"
+					margin="0px 0px 28px 0px"
+					color="--dark"
+					lg-text-align="center"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--headline3"
+					md-font="--headline3"
+				>
+					Discovery
+				</Text>
+				<Text
+					opacity="0.6"
+					sm-text-align="left"
+					lg-text-align="left"
+					lg-margin="0px 0px 18px 0px"
+					sm-font="--base"
+					font="normal 400 20px/1.5 --fontFamily-sans"
+					margin="0px 0px 20px 0px"
+					color="--darkL2"
+				>
+					Use our engaging feed to share your events to individuals who are eager network. Have a dedicated feed to improve visibility for your events and organizations.
+				</Text>
 				<Box
 					display="flex"
-					flex-direction="column"
-					align-items="flex-start"
-					min-width="100px"
-					min-height="100px"
+					sm-flex-direction="column"
+					sm-text-align="center"
+					border-radius="30px"
+					border-color="rgba(255, 255, 255, 0.12)"
 				>
-					<Text
-						lg-text-align="center"
-						quarkly-title="Title"
-						text-transform="uppercase"
-						opacity="0.6"
-						lg-margin="0px 0px 6px 0px"
-						font="--base"
-						margin="0px 0px 10px 0px"
-						letter-spacing="1px"
-						color="--dark"
+					<Link
+						href="#"
+						padding="12px 24px 12px 24px"
+						color="--light"
+						background="--color-indigo"
+						text-decoration-line="initial"
+						font="--lead"
+						border-radius="30px"
+						margin="0px 16px 0px 0px"
+						sm-margin="0px 0px 16px 0px"
+						sm-text-align="center"
+						hover-background="--color-orange"
+						hover-transition="background-color 0.2s ease-in-out 0s"
+						transition="background-color 0.2s ease-in-out 0s"
+						flex-direction="row"
 					>
-						Data
-					</Text>
-					<Text
-						font="normal 500 45px/1.2 --fontFamily-sans"
-						margin="0px 0px 28px 0px"
-						color="--dark"
-						lg-text-align="center"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--headline3"
-						md-font="--headline3"
-					>
-						Discovery
-					</Text>
-					<Text
-						opacity="0.6"
-						sm-text-align="left"
-						lg-text-align="left"
-						lg-margin="0px 0px 18px 0px"
-						sm-font="--base"
-						font="normal 400 20px/1.5 --fontFamily-sans"
-						margin="0px 0px 20px 0px"
-						color="--darkL2"
-					>
-						Use our engaging feed to share your events to individuals who are eager network. Social Media cannot be your only marketing channel, use a dedicated feed to improve visibility.
-					</Text>
+						Join an Event
+					</Link>
 				</Box>
+			</Box>
+			<Box
+				margin="0px 0px 0px 0px"
+				padding="px 0px % 0px"
+				width="50%"
+				border-radius="30px"
+				order="0"
+				display="flex"
+				xl-overflow-x="hidden"
+				xl-overflow-y="hidden"
+				xl-justify-content="center"
+				md-padding="px 0px 100px 0px"
+				md-margin="0px 0px px 0px"
+			>
+				<Image
+					src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/[Mockup]%20iPhone%2014.png?v=2023-03-29T16:47:16.104Z"
+					display="block"
+					align-items="flex-start"
+					margin="0px 0px 0px 0px"
+					padding="0px 0px 0px 0px"
+					md-margin="0px 0px px 0px"
+					md-padding="0px 0px 0px 0px"
+				/>
 			</Box>
 		</Section>
 		<Section
@@ -555,7 +674,6 @@ export default (() => {
 				display="grid"
 			>
 				<Box display="flex" align-items="center" sm-flex-wrap="wrap">
-					<Image width="28px" height="28px" src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" />
 					<Link
 						white-space="nowrap"
 						font="--base"
@@ -576,7 +694,6 @@ export default (() => {
 				</SocialMedia>
 			</Box>
 		</Section>
-		<Components.BurgerMenu />
 		<Section />
 		<Link
 			font={"--capture"}
