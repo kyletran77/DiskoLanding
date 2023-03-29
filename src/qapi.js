@@ -32,7 +32,7 @@ export default {
 		"64234a01aed6310020be6383": {
 			"id": "64234a01aed6310020be6383",
 			"pageUrl": "about",
-			"name": "About",
+			"name": "Organizations",
 			"seo": {
 				"og:title": "About | Website Example",
 				"og:description": "It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.",
@@ -56,7 +56,7 @@ export default {
 		"64234a01aed6310020be638f": {
 			"id": "64234a01aed6310020be638f",
 			"pageUrl": "contact",
-			"name": "Contact",
+			"name": "Ambassadors",
 			"seo": {
 				"og:image": "https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/website-example-quarkly.png?v=2020-11-05T19:48:01.806Z",
 				"title": "Contact | Website Example",
@@ -69,7 +69,9 @@ export default {
 	"mode": "production",
 	"projectType": "create-react-app",
 	"site": {
-		"styles": {},
+		"styles": {
+			"font": "18px --fontFamily-sans"
+		},
 		"seo": {}
 	}
 }
