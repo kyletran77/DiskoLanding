@@ -191,7 +191,7 @@ export default (() => {
 						transition="background-color 0.2s ease-in-out 0s"
 						flex-direction="row"
 					>
-						Get Started
+						Let's Boogie
 					</Link>
 				</Box>
 			</Box>
