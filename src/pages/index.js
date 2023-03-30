@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Section, Text, Em, Span, Box, Strong, Input, Button } from "@quarkly/widgets";
+import { Theme, Link, Image, Section, Text, Span, Box, Strong, Em } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, Formspree, SocialMedia } from "@quarkly/components";
+import { Override, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
 import { MdMenu } from "react-icons/md";
 export default (() => {
@@ -111,13 +111,14 @@ export default (() => {
 		</Section>
 		<Section
 			padding="140px 0 140px 0"
-			background="#fee5fe url() 0% 0% /auto repeat scroll padding-box"
+			background="#ffffff radial-gradient(circle at center,#EBDBFF 0%,#ffffff 47.6%)"
 			lg-background="#fff"
 			md-padding="96px 0 70px 0"
 			sm-padding="72px 0 70px 0"
 			border-color="#b6b6b6"
+			sm-background="#fff radial-gradient(circle at center,#A873E8 0%,#fffff 100%)"
 		>
-			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" />
+			<Override slot="SectionContent" flex-direction="row" flex-wrap="wrap" sm-background="rgba(0, 0, 0, 0) radial-gradient(circle at center,#A873E8 0%,#ffffff 45.7%) 0% 0% /auto repeat scroll padding-box" />
 			<Box
 				display="flex"
 				width="50%"
@@ -135,14 +136,21 @@ export default (() => {
 				<Text
 					margin="0px 0px 24px 0px"
 					color="--dark"
-					font="normal 500 73px/1.2 --fontFamily-sans"
+					font="normal 500 73px/1.2 --fontFamily-googleOutfit"
 					lg-text-align="center"
 					sm-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
-					md-font="normal 700 42px/1.2 &quot;Source Sans Pro&quot;, sans-serif"
+					md-font="normal 500 45px/1.2 --fontFamily-googleOutfit"
 				>
-					The all-in-one event marketing platform{" "}
+					Spread the word to your new members.{" "}
 				</Text>
-				<Text margin="0px 0px 0px 0px" color="#586D8E" font="normal 400 30px/1.5 --fontFamily-sans" lg-text-align="center">
+				<Text
+					margin="0px 0px 0px 0px"
+					color="#586D8E"
+					font="normal 400 30px/1.5 --fontFamily-sans"
+					lg-text-align="center"
+					md-font="italic 100 30px/1.5 --fontFamily-googleOutfit"
+					md-color="#8b8b8b"
+				>
 					<Span
 						overflow-wrap="normal"
 						word-break="normal"
@@ -152,8 +160,9 @@ export default (() => {
 						hyphens="manual"
 						user-select="auto"
 						pointer-events="auto"
+						font="normal 500 28px/1.2 --fontFamily-googleOutfit"
 					>
-						<Em
+						<Span
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -163,8 +172,8 @@ export default (() => {
 							user-select="auto"
 							pointer-events="auto"
 						>
-							Marketing aint easy.
-						</Em>
+							Event Marketing aint easy.
+						</Span>
 					</Span>
 				</Text>
 				<Text margin="0px 0px 40px 0px" color="--darkL2" font="--lead" lg-text-align="center" />
@@ -174,12 +183,13 @@ export default (() => {
 					sm-text-align="center"
 					border-radius="30px"
 					border-color="rgba(255, 255, 255, 0.12)"
+					font="18px --fontFamily-googleOutfit"
 				>
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
 						color="--light"
-						background="--color-indigo"
+						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"
 						border-radius="30px"
@@ -219,6 +229,7 @@ export default (() => {
 					hyphens="manual"
 					user-select="auto"
 					pointer-events="auto"
+					font="500 28px/33.6px --fontFamily-googleOutfit"
 				>
 					<Span
 						overflow-wrap="normal"
@@ -242,7 +253,9 @@ export default (() => {
 						>
 							Disko ={" "}
 						</Strong>
-						One-Link + Event Landing Page + Discovery + Advanced Analytics{" "}
+						<Strong>
+							One-Link + Event Landing Page + Discovery + Advanced Analytics{" "}
+						</Strong>
 					</Span>
 					<Span
 						overflow-wrap="normal"
@@ -254,7 +267,10 @@ export default (() => {
 						user-select="auto"
 						pointer-events="auto"
 					>
-						+{" "}
+						<Strong>
+							+ Text Reminders
+						</Strong>
+						{" "}+{" "}
 					</Span>
 					more to come
 				</Em>
@@ -292,7 +308,7 @@ export default (() => {
 					SHaring
 				</Text>
 				<Text
-					font="normal 500 45px/1.2 --fontFamily-sans"
+					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
 					margin="0px 0px 28px 0px"
 					color="--dark"
 					lg-text-align="center"
@@ -321,14 +337,15 @@ export default (() => {
 					sm-text-align="center"
 					border-radius="30px"
 					border-color="rgba(255, 255, 255, 0.12)"
+					font="18px --fontFamily-googleOutfit"
 				>
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
 						color="--light"
-						background="--color-indigo"
+						background="#A873E8"
 						text-decoration-line="initial"
-						font="--lead"
+						font="normal 400 20px/1.5 --fontFamily-googleOutfit"
 						border-radius="30px"
 						margin="0px 16px 0px 0px"
 						sm-margin="0px 0px 16px 0px"
@@ -369,7 +386,6 @@ export default (() => {
 		</Section>
 		<Section
 			padding="100px 0 100px 0"
-			background="#fbffd6 url() 0% 0% /auto repeat scroll padding-box"
 			lg-background="#fff"
 			md-padding="96px 0 70px 0"
 			sm-padding="72px 0 70px 0"
@@ -398,7 +414,7 @@ export default (() => {
 					Data
 				</Text>
 				<Text
-					font="normal 500 45px/1.2 --fontFamily-sans"
+					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
 					margin="0px 0px 28px 0px"
 					color="--dark"
 					lg-text-align="center"
@@ -416,7 +432,7 @@ export default (() => {
 					lg-text-align="left"
 					lg-margin="0px 0px 18px 0px"
 					sm-font="--base"
-					font="normal 400 20px/1.5 --fontFamily-sans"
+					font="normal 400 20px/1.5 --fontFamily-googleOutfit"
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 					xl-text-align="left"
@@ -434,7 +450,7 @@ export default (() => {
 						href="#"
 						padding="12px 24px 12px 24px"
 						color="--light"
-						background="--color-indigo"
+						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"
 						border-radius="30px"
@@ -506,7 +522,7 @@ export default (() => {
 					marketing
 				</Text>
 				<Text
-					font="normal 500 45px/1.2 --fontFamily-sans"
+					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
 					margin="0px 0px 28px 0px"
 					color="--dark"
 					lg-text-align="center"
@@ -522,11 +538,11 @@ export default (() => {
 					lg-text-align="left"
 					lg-margin="0px 0px 18px 0px"
 					sm-font="--base"
-					font="normal 400 20px/1.5 --fontFamily-sans"
+					font="normal 400 20px/1.5 --fontFamily-googleOutfit"
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Use our engaging feed to share your events to individuals who are eager network. Have a dedicated feed to improve visibility for your events and organizations.
+					Use our engaging feed to share your events to individuals who are eager network. Have a dedicated feed to improve visibility for your events and organizations!
 				</Text>
 				<Box
 					display="flex"
@@ -539,7 +555,7 @@ export default (() => {
 						href="#"
 						padding="12px 24px 12px 24px"
 						color="--light"
-						background="--color-indigo"
+						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"
 						border-radius="30px"
@@ -585,6 +601,8 @@ export default (() => {
 			lg-padding="50px 0 25px 0"
 			lg-height="auto"
 			justify-content="center"
+			md-background="#A873E8"
+			background="#A873E8"
 		>
 			<Override
 				slot="SectionContent"
@@ -593,63 +611,17 @@ export default (() => {
 				width="100%"
 				margin="0px 32px 0px 32px"
 			/>
-			<Section background="--color-light" color="--dark" padding="64px 0 64px 0">
-				<Box margin="-16px -16px -16px -16px" display="flex" flex-wrap="wrap">
-					<Box padding="16px 16px 16px 16px" width="50%" lg-width="100%">
-						<Box>
-							<Text
-								font="--base"
-								color="--grey"
-								letter-spacing="1px"
-								text-transform="uppercase"
-								margin="0"
-							>
-								Contact
-							</Text>
-							<Text font="--headline2" max-width="500px" margin="10px 0 0 0">
-								Email us, we would love to hear form you
-							</Text>
-						</Box>
-					</Box>
-					<Box width="50%" padding="8px 8px 8px 8px" lg-width="100%">
-						<Box>
-							<Formspree endpoint="xeqpgrlv">
-								<Box
-									gap="16px"
-									display="grid"
-									flex-direction="row"
-									flex-wrap="wrap"
-									grid-template-columns="repeat(2, 1fr)"
-									grid-gap="16px"
-								>
-									<Box sm-width="100%" display="flex" flex-direction="column">
-										<Text font="--base" margin="0 0 4px 0">
-											Name
-										</Text>
-										<Input width="100%" name="name" type="text" />
-									</Box>
-									<Box sm-width="100%" display="flex" flex-direction="column">
-										<Text font="--base" margin="0 0 4px 0">
-											Email
-										</Text>
-										<Input width="100%" type="email" name="email" />
-									</Box>
-									<Box display="flex" flex-direction="column" grid-column="1 / span 2">
-										<Text font="--base" margin="0 0 4px 0">
-											Message
-										</Text>
-										<Input as="textarea" rows="4" width="100%" name="message" />
-									</Box>
-									<Box display="flex" flex-direction="column" align-items="flex-start" grid-column="1 / span 2">
-										<Button>
-											Send
-										</Button>
-									</Box>
-								</Box>
-							</Formspree>
-						</Box>
-					</Box>
-				</Box>
+			<Section color="--dark" padding="64px 0 64px 0" md-background="rgba(247, 251, 255, 0)" md-padding="0 0 64px 0">
+				<Text
+					margin="0px 0px 0px 0px"
+					md-font="30px --fontFamily-googleOutfit"
+					md-text-align="center"
+					md-color="#ffffff"
+					color="#ffffff"
+					font="45px --fontFamily-googleOutfit"
+				>
+					Express yourself, especially when you are marketing
+				</Text>
 			</Section>
 		</Section>
 		<Section
@@ -658,6 +630,8 @@ export default (() => {
 			box-sizing="border-box"
 			quarkly-title="Footer"
 			justify-content="center"
+			md-background="#A873E8"
+			background="#A873E8"
 		>
 			<Override
 				slot="SectionContent"
@@ -681,9 +655,12 @@ export default (() => {
 						text-align="left"
 						margin="1px 0px 0px 10px"
 						href="https://quarkly.io/"
-						color="--dark"
+						color="--light"
 						text-decoration-line="initial"
 						hover-text-decoration-line="underline"
+						md-border-color="#ffffff"
+						md-color="#ffffff"
+						border-color="#ffffff"
 					>
 						Disko 2023
 					</Link>
@@ -694,7 +671,6 @@ export default (() => {
 				</SocialMedia>
 			</Box>
 		</Section>
-		<Section />
 		<Link
 			font={"--capture"}
 			font-size={"10px"}
