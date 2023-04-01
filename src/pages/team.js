@@ -1,6 +1,6 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Button, Section, Text, Box } from "@quarkly/widgets";
+import { Theme, Link, Image, Section, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, SocialMedia } from "@quarkly/components";
@@ -26,63 +26,52 @@ export default (() => {
 				display="grid"
 				grid-template-columns="repeat(3, 1fr)"
 				md-grid-template-columns="repeat(2, 1fr)"
-				margin="0px 32px 0px 32px"
+				margin="0px 100px 0px 100px"
 				width="100%"
 			/>
-			<Link href="/" position="relative" transition="opacity 200ms ease" quarkly-title="Link">
-				<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-logo.svg?v=2020-11-06T17:26:21.226Z" width="120px" z-index="3" />
-			</Link>
-			<Components.BurgerMenu md-align-items="center" md-justify-content="flex-end" md-display="flex">
-				<Override
-					slot="menu-open"
-					md-bottom={0}
-					md-display="flex"
-					md-flex-direction="column"
-					md-align-items="center"
-					md-justify-content="center"
-					md-top={0}
-				/>
-				<Override slot="icon-open" md-right="18px" md-position="fixed" md-top="18px" />
+			<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Group%20109.png?v=2023-03-29T05:43:33.518Z" width="120px" z-index="3" />
+			<Components.BurgerMenu md-display="flex" md-align-items="center" md-justify-content="flex-end">
+				<Override slot="icon-open" md-position="fixed" md-top="18px" md-right="18px" />
 				<Override
 					slot="menu"
-					lg-transition="transform 400ms ease 0s"
 					md-top={0}
-					align-items="center"
-					md-height="100%"
-					padding="0px 0 0px 0"
+					md-width="100%"
 					justify-content="center"
-					lg-transform="translateY(0px) translateX(0px)"
+					lg-transition="transform 400ms ease 0s"
 					md-position="fixed"
 					display="flex"
 					md-left={0}
-					md-width="100%"
+					lg-transform="translateY(0px) translateX(0px)"
+					md-height="100%"
+					padding="0px 0 0px 0"
+					align-items="center"
 				>
 					<Override
 						slot="item"
-						padding="8px 20px 8px 20px"
 						md-padding="16px 40px 16px 40px"
 						display="inline-block"
 						text-transform="uppercase"
 						text-align="center"
+						padding="8px 20px 8px 20px"
 					/>
 					<Override slot="item-404" lg-display="none" display="none" />
 					<Override slot="item-index" lg-display="none" display="none" />
 					<Override
 						slot="link"
-						color="--dark"
-						letter-spacing="0.5px"
-						md-transition="opacity .15s ease 0s"
+						md-hover-opacity="1"
+						md-active-opacity="1"
+						md-color="--dark"
 						font="--base"
 						text-transform="initial"
 						md-font="16px/24px sans-serif"
-						transition="opacity .15s ease 0s"
 						text-decoration-line="initial"
-						opacity=".5"
-						md-color="--dark"
+						color="--dark"
+						transition="opacity .15s ease 0s"
+						letter-spacing="0.5px"
 						md-opacity=".5"
+						md-transition="opacity .15s ease 0s"
+						opacity=".5"
 						hover-opacity="1"
-						md-hover-opacity="1"
-						md-active-opacity="1"
 					/>
 					<Override
 						slot="link-active"
@@ -92,6 +81,15 @@ export default (() => {
 						color="--primary"
 						cursor="default"
 					/>
+					<Override slot="link-about">
+						How it Works
+					</Override>
+					<Override slot="link-team">
+						Team
+					</Override>
+					<Override slot="link-contact">
+						Ambassadors
+					</Override>
 				</Override>
 				<Override slot="icon,icon-close" category="md" icon={MdMenu} />
 				<Override
@@ -102,639 +100,462 @@ export default (() => {
 					md-right="0px"
 					md-position="relative"
 				/>
+				<Override
+					slot="menu-open"
+					md-justify-content="center"
+					md-top={0}
+					md-bottom={0}
+					md-display="flex"
+					md-flex-direction="column"
+					md-align-items="center"
+				/>
 			</Components.BurgerMenu>
-			<Button
-				padding="8px 18px 8px 18px"
-				font="--base"
-				letter-spacing="0.5px"
-				background="--color-primary"
-				hover-transform="translateY(-4px)"
-				z-index="5"
-				md-display="none"
-				white-space="nowrap"
-				border-radius="0px"
-				transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
-				justify-self="end"
-			>
-				Contact Us
-			</Button>
+			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative" />
 		</Section>
-		<Section quarkly-title="Hero" padding="25px 0 75px 0" lg-padding="25px 0 25px 0" justify-content="center">
-			<Override
-				slot="SectionContent"
-				min-width="auto"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-			/>
+		<Section padding="80px 0 80px 0">
+			<Override slot="SectionContent" background="#ffffff radial-gradient(circle at center,#EBDBFF 0%,#ffffff 47.6%)" />
 			<Box
-				display="flex"
 				align-items="center"
+				display="flex"
 				justify-content="center"
-				background="radial-gradient(at center,--color-darkL2 23.3%,rgba(0,0,0,0) 82.4%),linear-gradient(180deg,rgba(155, 108, 252, 0.15) 0%,transparent 100%) 0 0 no-repeat,--color-darkL2"
-				md-min-height="360px"
-				sm-min-height="180px"
+				flex-direction="column"
+				margin="px 0px 32px 0px"
 				width="100%"
-				min-height="480px"
+				padding="64px 0px 64px 0px"
 			>
 				<Text
-					font="--headline1"
-					align-items="center"
-					justify-content="center"
-					quarkly-title="Title"
-					sm-text-align="center"
-					md-font="--headline2"
-					lg-font="--headline2"
 					margin="0px 0px 0px 0px"
-					display="flex"
-					color="--light"
-					sm-font="normal 900 42px/1.2 -apple-system, system-ui, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+					font="normal 900 72px/1.2 --fontFamily-googleOutfit"
+					color="--dark"
+					sm-text-align="center"
 					text-align="center"
 				>
-					Team.
+					Our Team
+				</Text>
+				<Text
+					margin="16px 0px 0px 0px"
+					font="--lead"
+					display="block"
+					width="50%"
+					text-align="center"
+					color="--darkL2"
+					lg-width="100%"
+				>
+					The people changing the event marketing and management industry, one small step at a time{" "}
 				</Text>
 			</Box>
-		</Section>
-		<Section
-			border-width="1px 0px 1px 0px"
-			justify-content="center"
-			sm-padding="0px 0 0px 0"
-			quarkly-title="About"
-			padding="90px 0px 100px 0px"
-			border-style="solid"
-			box-sizing="border-box"
-			background="--color-lightD1"
-			border-color="--color-lightD2"
-			lg-padding="50px 0px 50px 0px"
-		>
-			<Override
-				slot="SectionContent"
-				sm-padding="24px 0px 24px 0px"
-				width="100%"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-				align-items="center"
-				margin="0px 32px 0px 32px"
-			/>
-			<Text
-				font="--base"
-				letter-spacing="1px"
-				margin="0px 0px 10px 0px"
-				color="--dark"
-				lg-text-align="center"
-				quarkly-title="Title"
-				text-align="center"
-				opacity="0.6"
-				lg-margin="0px 0px 6px 0px"
-				text-transform="uppercase"
-			>
-				Who we are
-			</Text>
-			<Text
-				color="--dark"
-				text-align="center"
-				width="85%"
-				lg-font="--lead"
-				sm-font="--base"
-				font="--headline3"
-				margin="0px 0px 0px 0px"
-				letter-spacing="1px"
-			>
-				We’re a group of creatives who've built a business to make the world a better place.
-			</Text>
-		</Section>
-		<Section
-			lg-padding="50px 0px 50px 0px"
-			justify-content="center"
-			padding="80px 0px 60px 0px"
-			quarkly-title="Team"
-			box-sizing="border-box"
-		>
-			<Override
-				slot="SectionContent"
-				align-items="center"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Text
-				letter-spacing="1px"
-				margin="0px 0px 10px 0px"
-				color="--dark"
-				text-transform="uppercase"
-				text-align="center"
-				font="--base"
-				opacity="0.5"
-			>
-				Meet Us
-			</Text>
-			<Text
-				color="--dark"
-				md-margin="0px 0px 32px 0px"
-				font="--headline2"
-				letter-spacing="1px"
-				width="100%"
-				lg-margin="0px 0px 42px 0px"
-				md-font="--headline3"
-				margin="0px 0px 72px 0px"
-				text-align="center"
-			>
-				Our World-Class Team
-			</Text>
 			<Box
-				sm-grid-template-columns="1fr"
-				min-width="10px"
 				display="grid"
-				width="100%"
-				grid-gap="32px"
 				grid-template-columns="repeat(3, 1fr)"
-				md-grid-template-columns="repeat(2, 1fr)"
-			>
-				<Box display="flex" flex-direction="column" align-items="flex-start">
-					<Box
-						padding="0px 0px 121% 0px"
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/100% no-repeat"
-						width="100%"
-						quarkly-title="Image"
-					/>
-					<Box sm-margin="12px 0px 0px 0px" sm-width="100%">
-						<Text
-							font="--headline3"
-							margin="24px 0px 8px 0px"
-							text-align="left"
-							lg-margin="12px 0px 8px 0px"
-							md-margin="8px 0px 2px 0px"
-							color="--dark"
-							quarkly-title="Name"
-							sm-margin="0px 0px 4px 0px"
-							md-font="--lead"
-						>
-							Nathan K. Joe
-						</Text>
-						<Text
-							margin="0px 0px 0px 0px"
-							text-align="left"
-							opacity="0.6"
-							color="--dark"
-							quarkly-title="Position"
-							font="--base"
-						>
-							Founder
-						</Text>
-					</Box>
-				</Box>
-				<Box align-items="flex-start" display="flex" flex-direction="column">
-					<Box
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/100% no-repeat"
-						width="100%"
-						quarkly-title="Image"
-						padding="0px 0px 121% 0px"
-					/>
-					<Box sm-width="100%" sm-margin="12px 0px 0px 0px">
-						<Text
-							font="--headline3"
-							margin="24px 0px 8px 0px"
-							text-align="left"
-							quarkly-title="Name"
-							md-font="--lead"
-							color="--dark"
-							sm-margin="0px 0px 4px 0px"
-							lg-margin="12px 0px 8px 0px"
-							md-margin="8px 0px 2px 0px"
-						>
-							Claire R. Peery
-						</Text>
-						<Text
-							opacity="0.6"
-							color="--dark"
-							quarkly-title="Position"
-							font="--base"
-							margin="0px 0px 0px 0px"
-							text-align="left"
-						>
-							Lead Designer
-						</Text>
-					</Box>
-				</Box>
-				<Box flex-direction="column" align-items="flex-start" display="flex">
-					<Box
-						width="100%"
-						quarkly-title="Image"
-						padding="0px 0px 121% 0px"
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/100% no-repeat"
-					/>
-					<Box sm-width="100%" sm-margin="12px 0px 0px 0px">
-						<Text
-							margin="24px 0px 8px 0px"
-							quarkly-title="Name"
-							md-font="--lead"
-							text-align="left"
-							font="--headline3"
-							sm-margin="0px 0px 4px 0px"
-							lg-margin="12px 0px 8px 0px"
-							md-margin="8px 0px 2px 0px"
-							color="--dark"
-						>
-							David R. Lema
-						</Text>
-						<Text
-							color="--dark"
-							quarkly-title="Position"
-							text-align="left"
-							font="--base"
-							margin="0px 0px 0px 0px"
-							opacity="0.6"
-						>
-							Developer
-						</Text>
-					</Box>
-				</Box>
-				<Box display="flex" flex-direction="column" align-items="flex-start">
-					<Box
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/100% no-repeat"
-						width="100%"
-						quarkly-title="Image"
-						padding-bottom="(4 / 3) * 100%"
-						padding="0px 0px 121% 0px"
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/110% no-repeat"
-					/>
-					<Box sm-margin="12px 0px 0px 0px" sm-width="100%">
-						<Text
-							color="--dark"
-							sm-margin="0px 0px 4px 0px"
-							lg-margin="12px 0px 8px 0px"
-							font="--headline3"
-							margin="24px 0px 8px 0px"
-							text-align="left"
-							quarkly-title="Name"
-							md-margin="8px 0px 2px 0px"
-							md-font="--lead"
-						>
-							Janet E. Morey
-						</Text>
-						<Text
-							font="--base"
-							margin="0px 0px 0px 0px"
-							text-align="left"
-							opacity="0.6"
-							color="--dark"
-							quarkly-title="Position"
-							md-margin="0px 0px 0px 0px"
-						>
-							HR
-						</Text>
-					</Box>
-				</Box>
-				<Box align-items="flex-start" display="flex" flex-direction="column">
-					<Box
-						quarkly-title="Image"
-						padding="0px 0px 121% 0px"
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-						padding-bottom="(4 / 3) * 100%"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-man.svg?v=2020-11-06T17:32:03.825Z) center center/100% no-repeat"
-						width="100%"
-					/>
-					<Box sm-margin="12px 0px 0px 0px" sm-width="100%">
-						<Text
-							md-margin="8px 0px 2px 0px"
-							sm-margin="0px 0px 4px 0px"
-							lg-margin="12px 0px 8px 0px"
-							quarkly-title="Name"
-							margin="24px 0px 8px 0px"
-							text-align="left"
-							color="--dark"
-							md-font="--lead"
-							font="--headline3"
-						>
-							Harry S. Lyons
-						</Text>
-						<Text
-							font="--base"
-							margin="0px 0px 0px 0px"
-							text-align="left"
-							opacity="0.6"
-							color="--dark"
-							quarkly-title="Position"
-							md-margin="0px 0px 0px 0px"
-						>
-							CEO
-						</Text>
-					</Box>
-				</Box>
-				<Box flex-direction="column" align-items="flex-start" display="flex">
-					<Box
-						padding-bottom="(4 / 3) * 100%"
-						background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/100% no-repeat"
-						width="100%"
-						quarkly-title="Image"
-						padding="0px 0px 121% 0px"
-						hover-background="--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-user-woman.svg?v=2020-11-06T17:32:24.681Z) center center/110% no-repeat"
-						transition="background --transitionDuration-normal --transitionTimingFunction-easeInOut 0s"
-					/>
-					<Box sm-margin="12px 0px 0px 0px" sm-width="100%">
-						<Text
-							margin="24px 0px 8px 0px"
-							md-margin="8px 0px 2px 0px"
-							md-font="--lead"
-							font="--headline3"
-							color="--dark"
-							quarkly-title="Name"
-							sm-margin="0px 0px 4px 0px"
-							lg-margin="12px 0px 8px 0px"
-							text-align="left"
-						>
-							Sherri J. Young
-						</Text>
-						<Text
-							font="--base"
-							margin="0px 0px 0px 0px"
-							opacity="0.6"
-							color="--dark"
-							quarkly-title="Position"
-							md-margin="0px 0px 0px 0px"
-						>
-							CTO
-						</Text>
-					</Box>
-				</Box>
-			</Box>
-		</Section>
-		<Section
-			padding="60px 0px 60px 0px"
-			quarkly-title="About"
-			background="--color-lightD1"
-			border-style="solid"
-			border-color="--color-lightD2"
-			box-sizing="border-box"
-			sm-padding="50px 0 50px 0"
-			border-width="1px 0px 1px 0px"
-			lg-padding="50px 0px 50px 0px"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				width="100%"
-				margin="0px 32px 0px 32px"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-				align-items="stretch"
-			/>
-			<Box
-				width="100%"
-				display="grid"
 				grid-gap="32px"
-				grid-template-columns="3fr 1fr 1fr 1fr 1fr"
-				xl-grid-template-columns="2fr 1fr 1fr 1fr 1fr"
-				md-grid-template-columns="repeat(4, 1fr)"
-				sm-grid-template-columns="1fr"
+				md-grid-template-columns="1fr"
+				width="100%"
+			>
+				<Box position="relative" display="flex" flex-direction="column" width="50% content-box">
+					<Box
+						width="100%"
+						height="auto"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="100% 0px 0px 0px"
+						border-radius="16px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/IMG_0259.jpg?v=2023-04-01T05:55:10.515Z"
+							border-radius="16px"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+							width="100%"
+						/>
+						<Box
+							position="absolute"
+							width="100%"
+							height="auto"
+							background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+							opacity=".3"
+							bottom="0px"
+							top="0px"
+							right="0px"
+							left="0px"
+							border-radius="16px"
+						/>
+					</Box>
+					<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+						<Text
+							margin="24px 0px 0px 0px"
+							font="--headline3"
+							display="block"
+							text-align="center"
+							color="--darkL1"
+						>
+							Kyle Tran
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="normal 500 14px/1.2 --fontFamily-sans"
+							display="block"
+							text-align="center"
+							color="--grey"
+							letter-spacing="2.8px"
+						>
+							DEV & BIZ
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="--base"
+							display="block"
+							text-align="center"
+							color="--darkL2"
+						>
+							Get your money up, not your funny up
+						</Text>
+					</Box>
+				</Box>
+				<Box position="relative" display="flex" flex-direction="column">
+					<Box
+						width="100%"
+						height="auto"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="100% 0px 0px 0px"
+						border-radius="16px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Nathan%20prof%20pic.jpeg?v=2023-04-01T05:45:02.515Z"
+							border-radius="16px"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+						<Box
+							position="absolute"
+							width="100%"
+							height="auto"
+							background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+							opacity=".3"
+							bottom="0px"
+							top="0px"
+							right="0px"
+							left="0px"
+							border-radius="16px"
+						/>
+					</Box>
+					<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+						<Text
+							margin="24px 0px 0px 0px"
+							font="--headline3"
+							display="block"
+							text-align="center"
+							color="--darkL1"
+						>
+							Nathan Ampudia
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="normal 500 14px/1.2 --fontFamily-sans"
+							display="block"
+							text-align="center"
+							color="--grey"
+							letter-spacing="2.8px"
+						>
+							DESIGNER & BIZ
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="--base"
+							display="block"
+							text-align="center"
+							color="--darkL2"
+						>
+							I do more than just coloring in my business classes
+						</Text>
+					</Box>
+				</Box>
+				<Box position="relative" display="flex" flex-direction="column">
+					<Box
+						width="100%"
+						height="auto"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="100% 0px 0px 0px"
+						border-radius="16px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/johnny_headshot.jpg?v=2023-04-01T05:52:41.459Z"
+							border-radius="16px"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
+						<Box
+							position="absolute"
+							width="100%"
+							height="auto"
+							background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+							opacity=".3"
+							bottom="0px"
+							top="0px"
+							right="0px"
+							left="0px"
+							border-radius="16px"
+						/>
+					</Box>
+					<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+						<Text
+							margin="24px 0px 0px 0px"
+							font="--headline3"
+							display="block"
+							text-align="center"
+							color="--darkL1"
+						>
+							Johnny Dinh
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="normal 500 14px/1.2 --fontFamily-sans"
+							display="block"
+							text-align="center"
+							color="--grey"
+							letter-spacing="2.8px"
+						>
+							Full-Stack Dev
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="--base"
+							display="block"
+							text-align="center"
+							color="--darkL2"
+						>
+							Stop changing the Figma
+						</Text>
+					</Box>
+				</Box>
+			</Box>
+			<Box
+				align-items="center"
+				display="flex"
+				justify-content="center"
+				flex-direction="column"
+				margin="32px 0px 32px 0px"
+				width="100%"
+			>
+				<Text
+					margin="0px 0px 0px 0px"
+					font="--headline2"
+					color="--dark"
+					sm-text-align="center"
+					text-align="center"
+				>
+					Advisors
+				</Text>
+				<Text
+					margin="16px 0px 0px 0px"
+					font="--lead"
+					display="block"
+					width="50%"
+					text-align="center"
+					color="--darkL2"
+					lg-width="100%"
+				>
+					Professionals giving Disko a hand
+				</Text>
+			</Box>
+			<Box
+				align-items="center"
+				display="flex"
+				justify-content="center"
+				flex-direction="column"
+				margin="0px 0px 32px 0px"
 			>
 				<Box
-					sm-grid-column="auto / auto"
-					sm-flex-direction="row"
-					sm-align-items="center"
-					display="flex"
-					flex-direction="column"
-					md-grid-column="1 / span 4"
-					md-align-items="flex-start"
+					display="grid"
+					grid-template-columns="repeat(2, 1fr)"
+					grid-gap="32px"
+					md-grid-template-columns="1fr"
+					height="551px"
 				>
-					<Text
-						lg-font="--headline2"
-						sm-font="--headline2"
-						sm-margin="0px 12px 0px 0px"
-						font="--headline1"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						color="--primary"
-					>
-						51
-					</Text>
-					<Text
-						color="--primary"
-						text-align="left"
-						sm-font="--lead"
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						opacity="0.6"
-					>
-						Total employees
-					</Text>
-				</Box>
-				<Box
-					flex-direction="column"
-					align-items="flex-end"
-					md-align-items="flex-start"
-					sm-flex-direction="row"
-					sm-align-items="center"
-					display="flex"
-				>
-					<Text
-						lg-text-align="center"
-						text-align="left"
-						lg-font="--headline2"
-						sm-font="--headline2"
-						sm-margin="0px 12px 0px 0px"
-						font="--headline1"
-						margin="0px 0px 0px 0px"
-						color="--dark"
-					>
-						10
-					</Text>
-					<Text
-						color="--darkL2"
-						lg-text-align="center"
-						text-align="left"
-						sm-font="--lead"
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						opacity="0.6"
-					>
-						designers
-					</Text>
-				</Box>
-				<Box
-					md-align-items="flex-start"
-					sm-flex-direction="row"
-					sm-align-items="center"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-end"
-				>
-					<Text
-						sm-font="--headline2"
-						display="inline-block"
-						color="--dark"
-						lg-font="--headline2"
-						text-align="left"
-						sm-margin="0px 12px 0px 0px"
-						font="--headline1"
-						margin="0px 0px 0px 0px"
-						lg-text-align="center"
-					>
-						25
-					</Text>
-					<Text
-						color="--darkL2"
-						lg-text-align="center"
-						text-align="left"
-						sm-font="--lead"
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						opacity="0.6"
-					>
-						developers
-					</Text>
-				</Box>
-				<Box
-					align-items="flex-end"
-					md-align-items="flex-start"
-					sm-flex-direction="row"
-					sm-align-items="center"
-					display="flex"
-					flex-direction="column"
-				>
-					<Text
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						text-align="left"
-						sm-font="--headline2"
-						font="--headline1"
-						color="--dark"
-						lg-text-align="center"
-						lg-font="--headline2"
-						sm-margin="0px 12px 0px 0px"
-					>
-						12
-					</Text>
-					<Text
-						text-align="left"
-						lg-text-align="right"
-						margin="0px 0px 0px 0px"
-						color="--darkL2"
-						opacity="0.6"
-						sm-font="--lead"
-						md-text-align="left"
-						font="--lead"
-						display="inline-block"
-					>
-						support agents
-					</Text>
-				</Box>
-				<Box
-					sm-align-items="center"
-					display="flex"
-					flex-direction="column"
-					align-items="flex-end"
-					md-align-items="flex-start"
-					sm-flex-direction="row"
-				>
-					<Text
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						lg-text-align="center"
-						sm-margin="0px 12px 0px 0px"
-						font="--headline1"
-						color="--dark"
-						text-align="left"
-						lg-font="--headline2"
-						sm-font="--headline2"
-					>
-						04
-					</Text>
-					<Text
-						lg-text-align="center"
-						text-align="left"
-						sm-font="--lead"
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						opacity="0.6"
-						color="--darkL2"
-					>
-						managers
-					</Text>
+					<Box position="relative" display="flex" flex-direction="column" width="50% content-box">
+						<Box
+							width="100%"
+							height="auto"
+							overflow-x="hidden"
+							overflow-y="hidden"
+							position="relative"
+							padding="100% 0px 0px 0px"
+							border-radius="16px"
+						>
+							<Image
+								src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Trinh_headshot.jpeg?v=2023-04-01T06:07:05.704Z"
+								border-radius="16px"
+								object-fit="cover"
+								position="absolute"
+								top={0}
+								left={0}
+								bottom={0}
+								right={0}
+								max-height="100%"
+								width="100%"
+							/>
+							<Box
+								position="absolute"
+								width="100%"
+								height="auto"
+								background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+								opacity=".3"
+								bottom="0px"
+								top="0px"
+								right="0px"
+								left="0px"
+								border-radius="16px"
+							/>
+						</Box>
+						<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+							<Text
+								margin="24px 0px 0px 0px"
+								font="--headline3"
+								display="block"
+								text-align="center"
+								color="--darkL1"
+							>
+								Trinh Tran
+							</Text>
+							<Text
+								margin="16px 0px 0px 0px"
+								font="normal 500 14px/1.2 --fontFamily-sans"
+								display="block"
+								text-align="center"
+								color="--grey"
+								letter-spacing="2.8px"
+							>
+								Director at Broadcom
+							</Text>
+							<Text
+								margin="16px 0px 0px 0px"
+								font="--base"
+								display="block"
+								text-align="center"
+								color="--darkL2"
+							>
+								Where are your KPIs?
+							</Text>
+						</Box>
+					</Box>
+					<Box position="relative" display="flex" flex-direction="column">
+						<Box
+							width="100%"
+							height="auto"
+							overflow-x="hidden"
+							overflow-y="hidden"
+							position="relative"
+							padding="100% 0px 0px 0px"
+							border-radius="16px"
+						>
+							<Image
+								src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/nikeshLMAO.jpeg?v=2023-04-01T06:09:19.401Z"
+								border-radius="16px"
+								width="100%"
+								object-fit="cover"
+								position="absolute"
+								top={0}
+								left={0}
+								bottom={0}
+								right={0}
+								max-height="100%"
+							/>
+							<Box
+								position="absolute"
+								width="100%"
+								height="auto"
+								background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+								opacity=".3"
+								bottom="0px"
+								top="0px"
+								right="0px"
+								left="0px"
+								border-radius="16px"
+							/>
+						</Box>
+						<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+							<Text
+								margin="24px 0px 0px 0px"
+								font="--headline3"
+								display="block"
+								text-align="center"
+								color="--darkL1"
+							>
+								Nikesh Raj Poudel
+							</Text>
+							<Text
+								margin="16px 0px 0px 0px"
+								font="normal 500 14px/1.2 --fontFamily-sans"
+								display="block"
+								text-align="center"
+								color="--grey"
+								letter-spacing="2.8px"
+							>
+								Consulting Director at 180 Degrees
+							</Text>
+							<Text
+								margin="16px 0px 0px 0px"
+								font="--base"
+								display="block"
+								text-align="center"
+								color="--darkL2"
+							>
+								I do CS classes for fun
+							</Text>
+						</Box>
+					</Box>
 				</Box>
 			</Box>
 		</Section>
 		<Section
-			justify-content="center"
 			quarkly-title="USP"
 			padding="75px 0 50px 0"
 			lg-padding="50px 0 25px 0"
 			lg-height="auto"
+			justify-content="center"
+			md-background="#A873E8"
+			background="#A873E8"
 		>
 			<Override
 				slot="SectionContent"
-				margin="0px 32px 0px 32px"
 				md-margin="0px 16px 0px 16px"
 				min-width="auto"
 				width="100%"
+				margin="0px 32px 0px 32px"
 			/>
-			<Box
-				sm-min-height="280px"
-				min-height="480px"
-				padding="36px 24px 36px 24px"
-				justify-content="center"
-				flex-direction="column"
-				background="linear-gradient(180deg,rgba(24, 29, 34, 0.5) 0%,transparent 100%) 0 0 no-repeat,--color-lightD1 url(https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-fireworks.svg?v=2020-11-06T17:22:27.801Z) center center/cover no-repeat"
-				display="flex"
-				align-items="center"
-				lg-min-height="420px"
-				md-min-height="360px"
-			>
+			<Section color="--dark" padding="64px 0 64px 0" md-background="rgba(247, 251, 255, 0)" md-padding="0 0 64px 0">
 				<Text
-					font="--headline2"
-					text-align="center"
-					quarkly-title="Title"
-					color="--light"
-					md-font="--headline3"
-					margin="10px 0px 15px 0px"
+					margin="0px 0px 0px 0px"
+					md-font="30px --fontFamily-googleOutfit"
+					md-text-align="center"
+					md-color="#ffffff"
+					color="#ffffff"
+					font="45px --fontFamily-googleOutfit"
 				>
-					Make It Work.
+					Express yourself, especially when you are marketing
 				</Text>
-				<Text
-					font="--lead"
-					opacity="0.6"
-					text-align="center"
-					quarkly-title="Description"
-					color="--light"
-					max-width="720px"
-					margin="0px 0px 28px 0px"
-				>
-					Good design adds value faster than it adds cost.
-				</Text>
-				<Button
-					font="--lead"
-					letter-spacing="0.5px"
-					background="--color-light"
-					active-box-shadow="none"
-					transition="opacity .15s ease 0s"
-					z-index="5"
-					hover-opacity=".85"
-					focus-box-shadow="none"
-					color="--darkL2"
-					padding="8px 36px 8px 36px"
-					position="relative"
-					hover-box-shadow="none"
-					margin="10px auto 0px auto"
-					opacity="1"
-					width="fit-content"
-					md-font="--base"
-				>
-					Start Now
-				</Button>
-			</Box>
+			</Section>
 		</Section>
 		<Section
 			margin="0 0 0 0"
@@ -742,35 +563,39 @@ export default (() => {
 			box-sizing="border-box"
 			quarkly-title="Footer"
 			justify-content="center"
+			md-background="#A873E8"
+			background="#A873E8"
 		>
 			<Override
 				slot="SectionContent"
 				width="100%"
-				margin="0px 32px 0px 32px"
 				md-margin="0px 16px 0px 16px"
 				min-width="auto"
+				margin="0px 32px 0px 32px"
 			/>
 			<Box
-				display="grid"
 				grid-gap="32px"
 				width="100%"
 				grid-template-columns="repeat(2, 1fr)"
 				sm-grid-gap="16px"
+				display="grid"
 			>
 				<Box display="flex" align-items="center" sm-flex-wrap="wrap">
-					<Image src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" width="28px" height="28px" />
 					<Link
 						white-space="nowrap"
 						font="--base"
 						opacity="0.6"
-						text-decoration-line="initial"
 						text-align="left"
 						margin="1px 0px 0px 10px"
-						hover-text-decoration-line="underline"
 						href="https://quarkly.io/"
-						color="--dark"
+						color="--light"
+						text-decoration-line="initial"
+						hover-text-decoration-line="underline"
+						md-border-color="#ffffff"
+						md-color="#ffffff"
+						border-color="#ffffff"
 					>
-						Made on Quarkly
+						Disko 2023
 					</Link>
 				</Box>
 				<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw" justify-content="flex-end">

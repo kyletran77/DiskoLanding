@@ -82,10 +82,13 @@ export default (() => {
 						cursor="default"
 					/>
 					<Override slot="link-about">
-						Organizations
+						How it Works
 					</Override>
 					<Override slot="link-team">
 						Team
+					</Override>
+					<Override slot="link-contact">
+						Ambassadors
 					</Override>
 				</Override>
 				<Override slot="icon,icon-close" category="md" icon={MdMenu} />
@@ -188,7 +191,7 @@ export default (() => {
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
-						color="--light"
+						color="#ffffff"
 						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"
@@ -342,7 +345,7 @@ export default (() => {
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
-						color="--light"
+						color="#ffffff"
 						background="#A873E8"
 						text-decoration-line="initial"
 						font="normal 400 20px/1.5 --fontFamily-googleOutfit"
@@ -423,6 +426,7 @@ export default (() => {
 					md-font="--headline3"
 					xl-text-align="left"
 					sm-text-align="left"
+					md-text-align="left"
 				>
 					Advanced Analytics
 				</Text>
@@ -449,7 +453,7 @@ export default (() => {
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
-						color="--light"
+						color="#ffffff"
 						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"
@@ -554,7 +558,7 @@ export default (() => {
 					<Link
 						href="#"
 						padding="12px 24px 12px 24px"
-						color="--light"
+						color="#ffffff"
 						background="#A873E8"
 						text-decoration-line="initial"
 						font="--lead"

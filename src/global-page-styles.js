@@ -14,9 +14,6 @@ const pageStyles = {
     },
     "team": {
         "font": "18px --fontFamily-sans"
-    },
-    "contact": {
-        "font": "18px --fontFamily-sans"
     }
 };
 
