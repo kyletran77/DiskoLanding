@@ -380,150 +380,142 @@ export default (() => {
 				</Text>
 			</Box>
 			<Box
-				align-items="center"
-				display="flex"
-				justify-content="center"
-				flex-direction="column"
-				margin="0px 0px 32px 0px"
+				display="grid"
+				grid-template-columns="repeat(3, 1fr)"
+				grid-gap="32px"
+				md-grid-template-columns="1fr"
+				width="100%"
 			>
-				<Box
-					display="grid"
-					grid-template-columns="repeat(2, 1fr)"
-					grid-gap="32px"
-					md-grid-template-columns="1fr"
-					height="551px"
-				>
-					<Box position="relative" display="flex" flex-direction="column" width="50% content-box">
+				<Box position="relative" display="flex" flex-direction="column" width="50% content-box">
+					<Box
+						width="100%"
+						height="auto"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="100% 0px 0px 0px"
+						border-radius="16px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Trinh_headshot.jpeg?v=2023-04-01T06:07:05.704Z"
+							border-radius="16px"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+							width="100%"
+						/>
 						<Box
+							position="absolute"
 							width="100%"
 							height="auto"
-							overflow-x="hidden"
-							overflow-y="hidden"
-							position="relative"
-							padding="100% 0px 0px 0px"
+							background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+							opacity=".3"
+							bottom="0px"
+							top="0px"
+							right="0px"
+							left="0px"
 							border-radius="16px"
-						>
-							<Image
-								src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Trinh_headshot.jpeg?v=2023-04-01T06:07:05.704Z"
-								border-radius="16px"
-								object-fit="cover"
-								position="absolute"
-								top={0}
-								left={0}
-								bottom={0}
-								right={0}
-								max-height="100%"
-								width="100%"
-							/>
-							<Box
-								position="absolute"
-								width="100%"
-								height="auto"
-								background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
-								opacity=".3"
-								bottom="0px"
-								top="0px"
-								right="0px"
-								left="0px"
-								border-radius="16px"
-							/>
-						</Box>
-						<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
-							<Text
-								margin="24px 0px 0px 0px"
-								font="--headline3"
-								display="block"
-								text-align="center"
-								color="--darkL1"
-							>
-								Trinh Tran
-							</Text>
-							<Text
-								margin="16px 0px 0px 0px"
-								font="normal 500 14px/1.2 --fontFamily-sans"
-								display="block"
-								text-align="center"
-								color="--grey"
-								letter-spacing="2.8px"
-							>
-								Director at Broadcom
-							</Text>
-							<Text
-								margin="16px 0px 0px 0px"
-								font="--base"
-								display="block"
-								text-align="center"
-								color="--darkL2"
-							>
-								Where are your KPIs?
-							</Text>
-						</Box>
+						/>
 					</Box>
-					<Box position="relative" display="flex" flex-direction="column">
+					<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+						<Text
+							margin="24px 0px 0px 0px"
+							font="--headline3"
+							display="block"
+							text-align="center"
+							color="--darkL1"
+						>
+							Trinh Tran
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="normal 500 14px/1.2 --fontFamily-sans"
+							display="block"
+							text-align="center"
+							color="--grey"
+							letter-spacing="2.8px"
+						>
+							Director at Broadcom
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="--base"
+							display="block"
+							text-align="center"
+							color="--darkL2"
+						>
+							Where are your KPIs?
+						</Text>
+					</Box>
+				</Box>
+				<Box position="relative" display="flex" flex-direction="column">
+					<Box
+						width="100%"
+						height="auto"
+						overflow-x="hidden"
+						overflow-y="hidden"
+						position="relative"
+						padding="100% 0px 0px 0px"
+						border-radius="16px"
+					>
+						<Image
+							src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/nikeshLMAO.jpeg?v=2023-04-01T06:09:19.401Z"
+							border-radius="16px"
+							width="100%"
+							object-fit="cover"
+							position="absolute"
+							top={0}
+							left={0}
+							bottom={0}
+							right={0}
+							max-height="100%"
+						/>
 						<Box
+							position="absolute"
 							width="100%"
 							height="auto"
-							overflow-x="hidden"
-							overflow-y="hidden"
-							position="relative"
-							padding="100% 0px 0px 0px"
+							background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
+							opacity=".3"
+							bottom="0px"
+							top="0px"
+							right="0px"
+							left="0px"
 							border-radius="16px"
+						/>
+					</Box>
+					<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
+						<Text
+							margin="24px 0px 0px 0px"
+							font="--headline3"
+							display="block"
+							text-align="center"
+							color="--darkL1"
 						>
-							<Image
-								src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/nikeshLMAO.jpeg?v=2023-04-01T06:09:19.401Z"
-								border-radius="16px"
-								width="100%"
-								object-fit="cover"
-								position="absolute"
-								top={0}
-								left={0}
-								bottom={0}
-								right={0}
-								max-height="100%"
-							/>
-							<Box
-								position="absolute"
-								width="100%"
-								height="auto"
-								background="linear-gradient(180deg, #0029FF 0%, rgba(255, 0, 229, 0.24) 100%)"
-								opacity=".3"
-								bottom="0px"
-								top="0px"
-								right="0px"
-								left="0px"
-								border-radius="16px"
-							/>
-						</Box>
-						<Box padding="0px 20px 0px 20px" margin="0px 0px 16px 0px">
-							<Text
-								margin="24px 0px 0px 0px"
-								font="--headline3"
-								display="block"
-								text-align="center"
-								color="--darkL1"
-							>
-								Nikesh Raj Poudel
-							</Text>
-							<Text
-								margin="16px 0px 0px 0px"
-								font="normal 500 14px/1.2 --fontFamily-sans"
-								display="block"
-								text-align="center"
-								color="--grey"
-								letter-spacing="2.8px"
-							>
-								Consulting Director at 180 Degrees
-							</Text>
-							<Text
-								margin="16px 0px 0px 0px"
-								font="--base"
-								display="block"
-								text-align="center"
-								color="--darkL2"
-							>
-								I do CS classes for fun
-							</Text>
-						</Box>
+							Nikesh Raj Poudel
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="normal 500 14px/1.2 --fontFamily-sans"
+							display="block"
+							text-align="center"
+							color="--grey"
+							letter-spacing="2.8px"
+						>
+							Consulting Director at 180 Degrees
+						</Text>
+						<Text
+							margin="16px 0px 0px 0px"
+							font="--base"
+							display="block"
+							text-align="center"
+							color="--darkL2"
+						>
+							I do CS classes for fun
+						</Text>
 					</Box>
 				</Box>
 			</Box>
