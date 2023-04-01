@@ -178,7 +178,7 @@ export default (() => {
 					letter-spacing="1px"
 					color="--dark"
 				>
-					SHaring
+					Step 1
 				</Text>
 				<Text
 					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
@@ -190,7 +190,7 @@ export default (() => {
 					md-font="--headline3"
 					text-align="left"
 				>
-					One-Link
+					Create Profile
 				</Text>
 				<Text
 					opacity="0.6"
@@ -202,7 +202,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+					After signing up with your phone number and name, you are able to customize your profile with your profile name, picture, and bio. Make sure you love it because the public will see this 💯
 				</Text>
 			</Box>
 			<Box
@@ -259,7 +259,7 @@ export default (() => {
 					letter-spacing="1px"
 					color="--dark"
 				>
-					SHaring
+					Step 2
 				</Text>
 				<Text
 					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
@@ -271,7 +271,7 @@ export default (() => {
 					md-font="--headline3"
 					text-align="left"
 				>
-					One-Link
+					Create an Event
 				</Text>
 				<Text
 					opacity="0.6"
@@ -283,7 +283,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+					By clicking on the purple "+" button on the bottome navigation bar, you will get a screen asking for the event info. Be detailed as possible, people will be using this as their main source of info. 💡
 				</Text>
 			</Box>
 			<Box
@@ -340,7 +340,7 @@ export default (() => {
 					letter-spacing="1px"
 					color="--dark"
 				>
-					SHaring
+					Step 3
 				</Text>
 				<Text
 					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
@@ -352,7 +352,7 @@ export default (() => {
 					md-font="--headline3"
 					text-align="left"
 				>
-					One-Link
+					Share and View Event
 				</Text>
 				<Text
 					opacity="0.6"
@@ -364,7 +364,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+					Your event screen will be beautifully shown for your potential attendees. They will see options to easily RSVP using their phone numbers as well as chatting in the discussion board below the event info. ✨
 				</Text>
 			</Box>
 			<Box
@@ -421,7 +421,7 @@ export default (() => {
 					letter-spacing="1px"
 					color="--dark"
 				>
-					SHaring
+					Step 4
 				</Text>
 				<Text
 					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
@@ -433,7 +433,7 @@ export default (() => {
 					md-font="--headline3"
 					text-align="left"
 				>
-					One-Link
+					Share your Profile
 				</Text>
 				<Text
 					opacity="0.6"
@@ -445,7 +445,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events. 🤪
 				</Text>
 			</Box>
 			<Box
@@ -502,7 +502,7 @@ export default (() => {
 					letter-spacing="1px"
 					color="--dark"
 				>
-					SHaring
+					Step 5
 				</Text>
 				<Text
 					font="normal 500 45px/1.2 --fontFamily-googleOutfit"
@@ -514,7 +514,7 @@ export default (() => {
 					md-font="--headline3"
 					text-align="left"
 				>
-					One-Link
+					Discovery Marketing
 				</Text>
 				<Text
 					opacity="0.6"
@@ -526,7 +526,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					Share all of your organizations events through a single link. Add your Disko profile to your LinkTree to have potential and current members know your upcoming events.
+					Our universal feed will expose your event to the public for more attendees. Hint: our algorithm promotes events that has been the most engaged 😋
 				</Text>
 			</Box>
 			<Box

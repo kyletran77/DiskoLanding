@@ -113,7 +113,7 @@ export default (() => {
 			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative" />
 		</Section>
 		<Section padding="80px 0 80px 0">
-			<Override slot="SectionContent" background="#ffffff radial-gradient(circle at center,#EBDBFF 0%,#ffffff 47.6%)" />
+			<Override slot="SectionContent" />
 			<Box
 				align-items="center"
 				display="flex"
