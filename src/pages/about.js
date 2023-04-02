@@ -29,7 +29,9 @@ export default (() => {
 				margin="0px 100px 0px 100px"
 				width="100%"
 			/>
-			<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Group%20109.png?v=2023-03-29T05:43:33.518Z" width="120px" z-index="3" />
+			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative">
+				<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Frame%207.png?v=2023-04-02T18:46:27.087Z" width="120px" z-index="3" />
+			</Link>
 			<Components.BurgerMenu md-display="flex" md-align-items="center" md-justify-content="flex-end">
 				<Override slot="icon-open" md-position="fixed" md-top="18px" md-right="18px" />
 				<Override
@@ -110,7 +112,6 @@ export default (() => {
 					md-align-items="center"
 				/>
 			</Components.BurgerMenu>
-			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative" />
 		</Section>
 		<Section
 			padding="140px 0 140px 0"
@@ -283,7 +284,7 @@ export default (() => {
 					margin="0px 0px 20px 0px"
 					color="--darkL2"
 				>
-					By clicking on the purple "+" button on the bottome navigation bar, you will get a screen asking for the event info. Be detailed as possible, people will be using this as their main source of info. 💡
+					By clicking on the purple "+" button on the bottom navigation bar, you will get a screen asking for the event info. Be detailed as possible, people will be using this as their main source of info. 💡
 				</Text>
 			</Box>
 			<Box
