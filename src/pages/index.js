@@ -4,6 +4,7 @@ import { Theme, Link, Image, Section, Text, Span, Box, Strong, Em } from "@quark
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -30,6 +31,10 @@ export default (() => {
 			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative">
 				<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Frame%207.png?v=2023-04-02T18:46:27.087Z" width="120px" z-index="3" />
 			</Link>
+			<Components.BurgerMenu md-display="flex" md-align-items="center" md-justify-content="flex-end">
+				<Override slot="icon-open" md-position="fixed" md-top="18px" md-right="18px" />
+				<Override slot="undefined" md-align-items="center" />
+			</Components.BurgerMenu>
 		</Section>
 		<Section
 			padding="140px 0 140px 0"
@@ -107,24 +112,7 @@ export default (() => {
 					border-color="rgba(255, 255, 255, 0.12)"
 					font="18px --fontFamily-googleOutfit"
 				>
-					<Link
-						href="/"
-						padding="12px 24px 12px 24px"
-						color="#ffffff"
-						background="#A873E8"
-						text-decoration-line="initial"
-						font="--lead"
-						border-radius="30px"
-						margin="0px 16px 0px 0px"
-						sm-margin="0px 0px 16px 0px"
-						sm-text-align="center"
-						hover-background="--color-orange"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						transition="background-color 0.2s ease-in-out 0s"
-						flex-direction="row"
-					>
-						Let's Boogie
-					</Link>
+					<Components.EmbedHTML buttonText="Let's Boogie" buttonLink="https://www.disko.rsvp" />
 				</Box>
 			</Box>
 			<Box
@@ -261,24 +249,7 @@ export default (() => {
 					border-color="rgba(255, 255, 255, 0.12)"
 					font="18px --fontFamily-googleOutfit"
 				>
-					<Link
-						href="#"
-						padding="12px 24px 12px 24px"
-						color="#ffffff"
-						background="#A873E8"
-						text-decoration-line="initial"
-						font="normal 400 20px/1.5 --fontFamily-googleOutfit"
-						border-radius="30px"
-						margin="0px 16px 0px 0px"
-						sm-margin="0px 0px 16px 0px"
-						sm-text-align="center"
-						hover-background="--color-orange"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						transition="background-color 0.2s ease-in-out 0s"
-						flex-direction="row"
-					>
-						Create a Link
-					</Link>
+					<Components.EmbedHTML buttonText="Create a Link" buttonLink="https://www.disko.rsvp" />
 				</Box>
 			</Box>
 			<Box
@@ -369,24 +340,7 @@ export default (() => {
 					border-radius="30px"
 					border-color="rgba(255, 255, 255, 0.12)"
 				>
-					<Link
-						href="#"
-						padding="12px 24px 12px 24px"
-						color="#ffffff"
-						background="#A873E8"
-						text-decoration-line="initial"
-						font="--lead"
-						border-radius="30px"
-						margin="0px 16px 0px 0px"
-						sm-margin="0px 0px 16px 0px"
-						sm-text-align="center"
-						hover-background="--color-orange"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						transition="background-color 0.2s ease-in-out 0s"
-						flex-direction="row"
-					>
-						View Your Data
-					</Link>
+					<Components.EmbedHTML buttonText="Create Data" buttonLink="https://www.disko.rsvp" />
 				</Box>
 			</Box>
 			<Box
@@ -474,24 +428,7 @@ export default (() => {
 					border-radius="30px"
 					border-color="rgba(255, 255, 255, 0.12)"
 				>
-					<Link
-						href="#"
-						padding="12px 24px 12px 24px"
-						color="#ffffff"
-						background="#A873E8"
-						text-decoration-line="initial"
-						font="--lead"
-						border-radius="30px"
-						margin="0px 16px 0px 0px"
-						sm-margin="0px 0px 16px 0px"
-						sm-text-align="center"
-						hover-background="--color-orange"
-						hover-transition="background-color 0.2s ease-in-out 0s"
-						transition="background-color 0.2s ease-in-out 0s"
-						flex-direction="row"
-					>
-						Join an Event
-					</Link>
+					<Components.EmbedHTML buttonText="Join an Event" buttonLink="https://www.disko.rsvp/home" />
 				</Box>
 			</Box>
 			<Box

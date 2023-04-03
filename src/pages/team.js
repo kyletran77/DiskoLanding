@@ -4,6 +4,7 @@ import { Theme, Link, Image, Section, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override } from "@quarkly/components";
+import * as Components from "components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"team"} />
@@ -30,6 +31,10 @@ export default (() => {
 			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative">
 				<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Frame%207.png?v=2023-04-02T18:46:27.087Z" width="120px" z-index="3" />
 			</Link>
+			<Components.BurgerMenu md-display="flex" md-align-items="center" md-justify-content="flex-end">
+				<Override slot="icon-open" md-position="fixed" md-top="18px" md-right="18px" />
+				<Override slot="undefined" md-align-items="center" />
+			</Components.BurgerMenu>
 		</Section>
 		<Section padding="80px 0 80px 0">
 			<Override slot="SectionContent" />
