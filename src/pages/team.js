@@ -3,9 +3,7 @@ import theme from "theme";
 import { Theme, Link, Image, Section, Text, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, SocialMedia } from "@quarkly/components";
-import * as Components from "components";
-import { MdMenu } from "react-icons/md";
+import { Override } from "@quarkly/components";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"team"} />
@@ -32,86 +30,6 @@ export default (() => {
 			<Link transition="opacity 200ms ease" quarkly-title="Link" href="/" position="relative">
 				<Image src="https://uploads.quarkly.io/64234a00aed6310020be6362/images/Frame%207.png?v=2023-04-02T18:46:27.087Z" width="120px" z-index="3" />
 			</Link>
-			<Components.BurgerMenu md-display="flex" md-align-items="center" md-justify-content="flex-end">
-				<Override slot="icon-open" md-position="fixed" md-top="18px" md-right="18px" />
-				<Override
-					slot="menu"
-					md-top={0}
-					md-width="100%"
-					justify-content="center"
-					lg-transition="transform 400ms ease 0s"
-					md-position="fixed"
-					display="flex"
-					md-left={0}
-					lg-transform="translateY(0px) translateX(0px)"
-					md-height="100%"
-					padding="0px 0 0px 0"
-					align-items="center"
-				>
-					<Override
-						slot="item"
-						md-padding="16px 40px 16px 40px"
-						display="inline-block"
-						text-transform="uppercase"
-						text-align="center"
-						padding="8px 20px 8px 20px"
-					/>
-					<Override slot="item-404" lg-display="none" display="none" />
-					<Override slot="item-index" lg-display="none" display="none" />
-					<Override
-						slot="link"
-						md-hover-opacity="1"
-						md-active-opacity="1"
-						md-color="--dark"
-						font="--base"
-						text-transform="initial"
-						md-font="16px/24px sans-serif"
-						text-decoration-line="initial"
-						color="--dark"
-						transition="opacity .15s ease 0s"
-						letter-spacing="0.5px"
-						md-opacity=".5"
-						md-transition="opacity .15s ease 0s"
-						opacity=".5"
-						hover-opacity="1"
-					/>
-					<Override
-						slot="link-active"
-						md-opacity="1"
-						md-cursor="default"
-						opacity="1"
-						color="--primary"
-						cursor="default"
-					/>
-					<Override slot="link-about">
-						How it Works
-					</Override>
-					<Override slot="link-team">
-						Team
-					</Override>
-					<Override slot="link-contact">
-						Ambassadors
-					</Override>
-				</Override>
-				<Override slot="icon,icon-close" category="md" icon={MdMenu} />
-				<Override
-					slot="icon"
-					category="md"
-					icon={MdMenu}
-					size="36px"
-					md-right="0px"
-					md-position="relative"
-				/>
-				<Override
-					slot="menu-open"
-					md-justify-content="center"
-					md-top={0}
-					md-bottom={0}
-					md-display="flex"
-					md-flex-direction="column"
-					md-align-items="center"
-				/>
-			</Components.BurgerMenu>
 		</Section>
 		<Section padding="80px 0 80px 0">
 			<Override slot="SectionContent" />
@@ -591,10 +509,6 @@ export default (() => {
 						Disko 2023
 					</Link>
 				</Box>
-				<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw" justify-content="flex-end">
-					<Override slot="link" background="none" border-radius="50%" />
-					<Override slot="icon" color="--dark" />
-				</SocialMedia>
 			</Box>
 		</Section>
 		<Link
