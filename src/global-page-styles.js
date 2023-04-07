@@ -14,6 +14,9 @@ const pageStyles = {
     },
     "team": {
         "font": "18px --fontFamily-sans"
+    },
+    "privacy-policytos": {
+        "font": "18px --fontFamily-sans"
     }
 };
 

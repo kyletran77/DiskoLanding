@@ -33,6 +33,6 @@ class UniqueSitemap extends Sitemap {
 
 (
     new UniqueSitemap(router())
-        .build('https://diskoapp.netlify.app')
+        .build('https://launch.disko.rsvp')
         .save('./public/sitemap-index.xml')
 );

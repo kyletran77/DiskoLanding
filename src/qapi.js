@@ -6,7 +6,8 @@ export default {
 				"64234a00aed6310020be637b",
 				"64234a01aed6310020be637f",
 				"64234a01aed6310020be6383",
-				"64234a01aed6310020be638b"
+				"64234a01aed6310020be638b",
+				"642f62c9aed6310020bf0f81"
 			],
 			"id": "root",
 			"pageUrl": "root"
@@ -51,6 +52,11 @@ export default {
 			},
 			"pageUrl": "team",
 			"name": "Team"
+		},
+		"642f62c9aed6310020bf0f81": {
+			"id": "642f62c9aed6310020bf0f81",
+			"pageUrl": "privacy-policytos",
+			"name": "Privacy Policy/TOS"
 		}
 	},
 	"mode": "production",
