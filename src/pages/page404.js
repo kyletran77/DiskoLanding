@@ -11,9 +11,12 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"404"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Disko
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Take the stress out of event planning with our powerful RSVP platform. Share events, track analytics, and discover new events on our dynamic event feed. Event marketing has never been so easy\n"} />
+			<meta property={"og:title"} content={"RSVP for Upcoming Events"} />
+			<meta property={"og:description"} content={"Join us for upcoming events and RSVP directly on our website. Stay up to date with event details and connect with other attendees."} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/64234a00aed6310020be6362/images/Frame%207.png?v=2023-04-02T18:46:27.087Z"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section padding="16px 0 16px 0" quarkly-title="Header" align-items="center" justify-content="center">
